@@ -15,3 +15,10 @@ const randomParts = [
     "photo go to jail? Because it was framed!",
     "tree go to the dentist? Because it needed a root canal!"
 ];
+
+function randomMessageGenerator () {
+    let randomIndex = Math.floor(Math.random()*(randomParts.length-1));
+    return '"Why did the ' + randomParts[randomIndex];
+}
+
+console.log(randomMessageGenerator());
