@@ -17,7 +17,7 @@ const randomParts = [
 ];
 
 function randomMessageGenerator () {
-    let randomIndex = Math.floor(Math.random()*(randomParts.length-1));
+    let randomIndex = Math.floor(Math.random()*randomParts.length);
     return '"Why did the ' + randomParts[randomIndex];
 }
 
